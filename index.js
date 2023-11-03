@@ -14,7 +14,7 @@ const router = jsonServer.router('./data/db.json');
 server.use('/api', router);
 server.use(
     cors({
-        origin: "https://codebook-snowy.vercel.app/",
+        origin: ["https://codebook-snowy.vercel.app", "http://localhost:3000"],
         methods: ["GET","POST","PUT","DELETE"]
     })
 )
